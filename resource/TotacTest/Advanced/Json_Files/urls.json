@@ -1,0 +1,17 @@
+{
+	"urls": [
+		{
+			"hover_menu": "hover/menu",
+			"query_gate": "query/gate",
+			"base_url": "http://10.0.1.86/tatoc/advanced/",
+			"error_url":"http://10.0.1.86/tatoc/error",
+			"vedio_player":"video/player",
+			"popup_url":"windows/popup",
+			"generate_token":"rest/service/token/",
+			"register_service":"rest/service/register/",
+			"file_handle":"file/handle",
+			"totac_complete":"http://10.0.1.86/tatoc/end"
+			
+		}
+	]
+}

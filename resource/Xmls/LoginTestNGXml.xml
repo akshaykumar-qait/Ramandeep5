@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1">
+	
+
+
+	
+	<test name="second">
+		<classes>
+			<!-- <class name="Tests.Login.LoginTest" /> -->
+			<class name="Tests.Login.Test3.Testta"></class>
+
+		</classes>
+
+	</test>
+	<test name="first">
+		<classes>
+			<!-- <class name="Tests.Login.LoginTest" /> -->
+			<class name="Tests.TesttheFlow.TesttheFlow"></class>
+		</classes>
+
+	</test>
+
+	
+	<!-- <test name="test annotation demo"> -->
+	<!-- <classes> -->
+	<!-- <class name="NATgeo.mygeo.TestAnnotationDemo"/> -->
+	<!-- </classes> -->
+	<!-- </test> -->
+</suite>

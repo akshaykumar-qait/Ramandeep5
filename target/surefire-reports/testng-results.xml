@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="12" passed="12">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="10797" started-at="2017-07-17T06:29:49Z" finished-at="2017-07-17T06:30:00Z">
+    <groups>
+      <group name="a">
+        <method signature="TesttheFlow.test3()[pri:0, instance:Tests.Login.TesttheFlow@39fb3ab6]" name="test3" class="Tests.Login.TesttheFlow"/>
+        <method signature="TesttheFlow.test1()[pri:0, instance:Tests.Login.TesttheFlow@39fb3ab6]" name="test1" class="Tests.Login.TesttheFlow"/>
+      </group> <!-- a -->
+      <group name="b">
+        <method signature="TesttheFlow.test2()[pri:0, instance:Tests.Login.TesttheFlow@39fb3ab6]" name="test2" class="Tests.Login.TesttheFlow"/>
+      </group> <!-- b -->
+    </groups>
+    <test name="Command line test" duration-ms="10797" started-at="2017-07-17T06:29:49Z" finished-at="2017-07-17T06:30:00Z">
+      <class name="Tests.Login.TesttheFlow">
+        <test-method status="PASS" signature="before_class()[pri:0, instance:Tests.Login.TesttheFlow@39fb3ab6]" name="before_class" is-config="true" duration-ms="1" started-at="2017-07-17T12:00:00Z" finished-at="2017-07-17T12:00:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before_class -->
+        <test-method status="PASS" signature="before_method()[pri:0, instance:Tests.Login.TesttheFlow@39fb3ab6]" name="before_method" is-config="true" duration-ms="0" started-at="2017-07-17T12:00:00Z" finished-at="2017-07-17T12:00:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before_method -->
+        <test-method status="PASS" signature="after_method()[pri:0, instance:Tests.Login.TesttheFlow@39fb3ab6]" name="after_method" is-config="true" duration-ms="0" started-at="2017-07-17T12:00:00Z" finished-at="2017-07-17T12:00:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after_method -->
+        <test-method status="PASS" signature="test6()[pri:0, instance:Tests.Login.TesttheFlow@39fb3ab6]" name="test6" duration-ms="0" started-at="2017-07-17T12:00:00Z" finished-at="2017-07-17T12:00:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test6 -->
+        <test-method status="PASS" signature="before_method()[pri:0, instance:Tests.Login.TesttheFlow@39fb3ab6]" name="before_method" is-config="true" duration-ms="0" started-at="2017-07-17T12:00:00Z" finished-at="2017-07-17T12:00:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before_method -->
+        <test-method status="PASS" signature="test5()[pri:0, instance:Tests.Login.TesttheFlow@39fb3ab6]" name="test5" duration-ms="0" started-at="2017-07-17T12:00:00Z" depends-on-methods="Tests.Login.TesttheFlow.test6" finished-at="2017-07-17T12:00:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test5 -->
+        <test-method status="PASS" signature="after_method()[pri:0, instance:Tests.Login.TesttheFlow@39fb3ab6]" name="after_method" is-config="true" duration-ms="0" started-at="2017-07-17T12:00:00Z" finished-at="2017-07-17T12:00:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after_method -->
+        <test-method status="PASS" signature="after_method()[pri:0, instance:Tests.Login.TesttheFlow@39fb3ab6]" name="after_method" is-config="true" duration-ms="1" started-at="2017-07-17T12:00:00Z" finished-at="2017-07-17T12:00:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after_method -->
+        <test-method status="PASS" signature="before_method()[pri:0, instance:Tests.Login.TesttheFlow@39fb3ab6]" name="before_method" is-config="true" duration-ms="0" started-at="2017-07-17T12:00:00Z" finished-at="2017-07-17T12:00:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before_method -->
+        <test-method status="PASS" signature="test4()[pri:0, instance:Tests.Login.TesttheFlow@39fb3ab6]" name="test4" duration-ms="0" started-at="2017-07-17T12:00:00Z" depends-on-methods="Tests.Login.TesttheFlow.test5" finished-at="2017-07-17T12:00:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test4 -->
+        <test-method status="PASS" signature="before_method()[pri:0, instance:Tests.Login.TesttheFlow@39fb3ab6]" name="before_method" is-config="true" duration-ms="0" started-at="2017-07-17T12:00:00Z" finished-at="2017-07-17T12:00:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before_method -->
+        <test-method status="PASS" signature="test3()[pri:0, instance:Tests.Login.TesttheFlow@39fb3ab6]" name="test3" duration-ms="0" started-at="2017-07-17T12:00:00Z" depends-on-methods="Tests.Login.TesttheFlow.test4" finished-at="2017-07-17T12:00:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method status="PASS" signature="after_method()[pri:0, instance:Tests.Login.TesttheFlow@39fb3ab6]" name="after_method" is-config="true" duration-ms="0" started-at="2017-07-17T12:00:00Z" finished-at="2017-07-17T12:00:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after_method -->
+        <test-method status="PASS" signature="test2()[pri:0, instance:Tests.Login.TesttheFlow@39fb3ab6]" name="test2" duration-ms="0" started-at="2017-07-17T12:00:00Z" depends-on-methods="Tests.Login.TesttheFlow.test3" finished-at="2017-07-17T12:00:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method status="PASS" signature="before_method()[pri:0, instance:Tests.Login.TesttheFlow@39fb3ab6]" name="before_method" is-config="true" duration-ms="0" started-at="2017-07-17T12:00:00Z" finished-at="2017-07-17T12:00:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before_method -->
+        <test-method status="PASS" signature="after_method()[pri:0, instance:Tests.Login.TesttheFlow@39fb3ab6]" name="after_method" is-config="true" duration-ms="0" started-at="2017-07-17T12:00:00Z" finished-at="2017-07-17T12:00:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after_method -->
+        <test-method status="PASS" signature="before_method()[pri:0, instance:Tests.Login.TesttheFlow@39fb3ab6]" name="before_method" is-config="true" duration-ms="0" started-at="2017-07-17T12:00:00Z" finished-at="2017-07-17T12:00:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before_method -->
+        <test-method status="PASS" signature="test7()[pri:1, instance:Tests.Login.TesttheFlow@39fb3ab6]" name="test7" duration-ms="0" started-at="2017-07-17T12:00:00Z" finished-at="2017-07-17T12:00:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test7 -->
+        <test-method status="PASS" signature="test1()[pri:0, instance:Tests.Login.TesttheFlow@39fb3ab6]" name="test1" duration-ms="0" started-at="2017-07-17T12:00:00Z" depends-on-methods="Tests.Login.TesttheFlow.test2" finished-at="2017-07-17T12:00:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="after_method()[pri:0, instance:Tests.Login.TesttheFlow@39fb3ab6]" name="after_method" is-config="true" duration-ms="0" started-at="2017-07-17T12:00:00Z" finished-at="2017-07-17T12:00:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after_method -->
+        <test-method status="PASS" signature="before_method()[pri:0, instance:Tests.Login.TesttheFlow@39fb3ab6]" name="before_method" is-config="true" duration-ms="0" started-at="2017-07-17T12:00:00Z" finished-at="2017-07-17T12:00:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before_method -->
+        <test-method status="PASS" signature="test9()[pri:3, instance:Tests.Login.TesttheFlow@39fb3ab6]" name="test9" duration-ms="1" started-at="2017-07-17T12:00:00Z" finished-at="2017-07-17T12:00:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test9 -->
+        <test-method status="PASS" signature="after_method()[pri:0, instance:Tests.Login.TesttheFlow@39fb3ab6]" name="after_method" is-config="true" duration-ms="0" started-at="2017-07-17T12:00:00Z" finished-at="2017-07-17T12:00:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after_method -->
+        <test-method status="PASS" signature="before_method()[pri:0, instance:Tests.Login.TesttheFlow@39fb3ab6]" name="before_method" is-config="true" duration-ms="0" started-at="2017-07-17T12:00:00Z" finished-at="2017-07-17T12:00:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before_method -->
+        <test-method status="PASS" signature="after_method()[pri:0, instance:Tests.Login.TesttheFlow@39fb3ab6]" name="after_method" is-config="true" duration-ms="0" started-at="2017-07-17T12:00:00Z" finished-at="2017-07-17T12:00:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after_method -->
+        <test-method status="PASS" signature="test8()[pri:2, instance:Tests.Login.TesttheFlow@39fb3ab6]" name="test8" duration-ms="0" started-at="2017-07-17T12:00:00Z" finished-at="2017-07-17T12:00:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test8 -->
+        <test-method status="PASS" signature="before_method()[pri:0, instance:Tests.Login.TesttheFlow@39fb3ab6]" name="before_method" is-config="true" duration-ms="0" started-at="2017-07-17T12:00:00Z" finished-at="2017-07-17T12:00:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before_method -->
+        <test-method status="PASS" signature="after_class()[pri:0, instance:Tests.Login.TesttheFlow@39fb3ab6]" name="after_class" is-config="true" duration-ms="0" started-at="2017-07-17T12:00:00Z" finished-at="2017-07-17T12:00:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after_class -->
+        <test-method status="PASS" signature="after_method()[pri:0, instance:Tests.Login.TesttheFlow@39fb3ab6]" name="after_method" is-config="true" duration-ms="0" started-at="2017-07-17T12:00:00Z" finished-at="2017-07-17T12:00:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after_method -->
+      </class> <!-- Tests.Login.TesttheFlow -->
+      <class name="Tests.Login.LoginTest">
+        <test-method status="PASS" signature="Initializer()[pri:0, instance:Tests.Login.LoginTest@61a485d2]" name="Initializer" is-config="true" duration-ms="999" started-at="2017-07-17T11:59:49Z" finished-at="2017-07-17T11:59:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Initializer -->
+        <test-method status="PASS" signature="before_test()[pri:0, instance:Tests.Login.TesttheFlow@39fb3ab6]" name="before_test" is-config="true" duration-ms="1" started-at="2017-07-17T11:59:50Z" finished-at="2017-07-17T11:59:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before_test -->
+        <test-method status="PASS" signature="TestA_user_invalid_login_check()[pri:0, instance:Tests.Login.LoginTest@61a485d2]" name="TestA_user_invalid_login_check" duration-ms="3614" started-at="2017-07-17T11:59:50Z" finished-at="2017-07-17T11:59:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestA_user_invalid_login_check -->
+        <test-method status="PASS" signature="TestB_user_login_check()[pri:0, instance:Tests.Login.LoginTest@61a485d2]" name="TestB_user_login_check" duration-ms="4539" started-at="2017-07-17T11:59:54Z" depends-on-methods="Tests.Login.LoginTest.TestA_user_invalid_login_check" finished-at="2017-07-17T11:59:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestB_user_login_check -->
+        <test-method status="PASS" signature="TestC_user_logout_check()[pri:0, instance:Tests.Login.LoginTest@61a485d2]" name="TestC_user_logout_check" duration-ms="1510" started-at="2017-07-17T11:59:58Z" depends-on-methods="Tests.Login.LoginTest.TestB_user_login_check" finished-at="2017-07-17T12:00:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestC_user_logout_check -->
+        <test-method status="PASS" signature="Closer()[pri:0, instance:Tests.Login.LoginTest@61a485d2]" name="Closer" is-config="true" duration-ms="110" started-at="2017-07-17T12:00:00Z" finished-at="2017-07-17T12:00:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Closer -->
+        <test-method status="PASS" signature="after_test()[pri:0, instance:Tests.Login.TesttheFlow@39fb3ab6]" name="after_test" is-config="true" duration-ms="0" started-at="2017-07-17T12:00:00Z" finished-at="2017-07-17T12:00:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after_test -->
+      </class> <!-- Tests.Login.LoginTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>

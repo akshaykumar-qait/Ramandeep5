@@ -1,0 +1,17 @@
+{
+	"urls": [
+		{
+			"frame_dungeon": "frame/dungeon",
+			"grid_gate": "grid/gate",
+			"base_url": "http://10.0.1.86/tatoc/basic/",
+			"error_url":"http://10.0.1.86/tatoc/error",
+			"drag_url":"drag",
+			"windows_url":"windows",
+			"popup_url":"windows/popup",
+			"cookie_url":"cookie",
+			"finish_url":"http://10.0.1.86/tatoc/end"
+			
+			
+		}
+	]
+}

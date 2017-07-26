@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Command line suite]">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="NATgeo.mygeo.Test1">
+        <methods>
+          <include name="Initializer"/>
+          <include name="TestA_user_invalid_login_check"/>
+          <include name="TestC_user_logout_check"/>
+          <include name="Closer"/>
+          <include name="TestB_user_login_check"/>
+        </methods>
+      </class> <!-- NATgeo.mygeo.Test1 -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->
