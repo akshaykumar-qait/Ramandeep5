@@ -116,7 +116,7 @@ public class Test2 {
 			arrsplit = arrsplit + readLine;
 
 		}
-		//f.delete();
+		f.delete();
 	
 
 		String session[] = arrsplit.split(":");
