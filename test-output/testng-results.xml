@@ -1,33 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="11" passed="11">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="8543" started-at="2017-07-26T12:59:14Z" finished-at="2017-07-26T12:59:22Z">
+  <suite name="Suite1" duration-ms="21942" started-at="2017-07-26T14:11:21Z" finished-at="2017-07-26T14:11:43Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="8543" started-at="2017-07-26T12:59:14Z" finished-at="2017-07-26T12:59:22Z">
+    <test name="second" duration-ms="10272" started-at="2017-07-26T14:11:21Z" finished-at="2017-07-26T14:11:31Z">
       <class name="Tests.tatoc.advanced.Test2">
-        <test-method status="PASS" signature="Initializer()[pri:0, instance:Tests.tatoc.advanced.Test2@3c0ecd4b]" name="Initializer" is-config="true" duration-ms="912" started-at="2017-07-26T18:29:14Z" finished-at="2017-07-26T18:29:15Z">
+        <test-method status="PASS" signature="Initializer()[pri:0, instance:Tests.tatoc.advanced.Test2@3c0ecd4b]" name="Initializer" is-config="true" duration-ms="1021" started-at="2017-07-26T19:41:21Z" finished-at="2017-07-26T19:41:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Initializer -->
-        <test-method status="PASS" signature="TestA_on_hover_menu()[pri:0, instance:Tests.tatoc.advanced.Test2@3c0ecd4b]" name="TestA_on_hover_menu" duration-ms="1246" started-at="2017-07-26T18:29:15Z" finished-at="2017-07-26T18:29:16Z">
+        <test-method status="PASS" signature="TestA_on_hover_menu()[pri:0, instance:Tests.tatoc.advanced.Test2@3c0ecd4b]" name="TestA_on_hover_menu" duration-ms="1322" started-at="2017-07-26T19:41:22Z" finished-at="2017-07-26T19:41:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestA_on_hover_menu -->
-        <test-method status="PASS" signature="TestA_check_the_database()[pri:0, instance:Tests.tatoc.advanced.Test2@3c0ecd4b]" name="TestA_check_the_database" duration-ms="1241" started-at="2017-07-26T18:29:16Z" depends-on-methods="Tests.tatoc.advanced.Test2.TestA_on_hover_menu" finished-at="2017-07-26T18:29:17Z">
+        <test-method status="PASS" signature="TestA_check_the_database()[pri:0, instance:Tests.tatoc.advanced.Test2@3c0ecd4b]" name="TestA_check_the_database" duration-ms="2771" started-at="2017-07-26T19:41:23Z" depends-on-methods="Tests.tatoc.advanced.Test2.TestA_on_hover_menu" finished-at="2017-07-26T19:41:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestA_check_the_database -->
-        <test-method status="PASS" signature="TestA_check_after_vedio_playback()[pri:0, instance:Tests.tatoc.advanced.Test2@3c0ecd4b]" name="TestA_check_after_vedio_playback" duration-ms="810" started-at="2017-07-26T18:29:17Z" depends-on-methods="Tests.tatoc.advanced.Test2.TestA_check_the_database" finished-at="2017-07-26T18:29:18Z">
+        <test-method status="PASS" signature="TestA_check_after_vedio_playback()[pri:0, instance:Tests.tatoc.advanced.Test2@3c0ecd4b]" name="TestA_check_after_vedio_playback" duration-ms="807" started-at="2017-07-26T19:41:26Z" depends-on-methods="Tests.tatoc.advanced.Test2.TestA_check_the_database" finished-at="2017-07-26T19:41:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestA_check_after_vedio_playback -->
-        <test-method status="PASS" signature="TestA_check_file_handle()[pri:0, instance:Tests.tatoc.advanced.Test2@3c0ecd4b]" name="TestA_check_file_handle" duration-ms="4308" started-at="2017-07-26T18:29:18Z" depends-on-methods="Tests.tatoc.advanced.Test2.TestA_check_after_vedio_playback" finished-at="2017-07-26T18:29:22Z">
+        <test-method status="PASS" signature="TestA_check_file_handle()[pri:0, instance:Tests.tatoc.advanced.Test2@3c0ecd4b]" name="TestA_check_file_handle" duration-ms="4328" started-at="2017-07-26T19:41:27Z" depends-on-methods="Tests.tatoc.advanced.Test2.TestA_check_after_vedio_playback" finished-at="2017-07-26T19:41:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestA_check_file_handle -->
       </class> <!-- Tests.tatoc.advanced.Test2 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- second -->
+    <test name="first" duration-ms="11659" started-at="2017-07-26T14:11:31Z" finished-at="2017-07-26T14:11:43Z">
+      <class name="Tests.tatoc.basic.Test1">
+        <test-method status="PASS" signature="Initializer()[pri:0, instance:Tests.tatoc.basic.Test1@ff5b51f]" name="Initializer" is-config="true" duration-ms="380" started-at="2017-07-26T19:41:31Z" finished-at="2017-07-26T19:41:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Initializer -->
+        <test-method status="PASS" signature="TestA_test_the_green_box_function()[pri:0, instance:Tests.tatoc.basic.Test1@ff5b51f]" name="TestA_test_the_green_box_function" duration-ms="3519" started-at="2017-07-26T19:41:32Z" finished-at="2017-07-26T19:41:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestA_test_the_green_box_function -->
+        <test-method status="PASS" signature="TestF_test_the_form_filling()[pri:0, instance:Tests.tatoc.basic.Test1@ff5b51f]" name="TestF_test_the_form_filling" duration-ms="597" started-at="2017-07-26T19:41:35Z" finished-at="2017-07-26T19:41:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestF_test_the_form_filling -->
+        <test-method status="PASS" signature="TestG_test_the_token_getting_cookie_setting()[pri:0, instance:Tests.tatoc.basic.Test1@ff5b51f]" name="TestG_test_the_token_getting_cookie_setting" duration-ms="409" started-at="2017-07-26T19:41:36Z" finished-at="2017-07-26T19:41:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestG_test_the_token_getting_cookie_setting -->
+        <test-method status="PASS" signature="TestB_test_the_red_box_function()[pri:0, instance:Tests.tatoc.basic.Test1@ff5b51f]" name="TestB_test_the_red_box_function" duration-ms="2990" started-at="2017-07-26T19:41:36Z" depends-on-methods="Tests.tatoc.basic.Test1.TestA_test_the_green_box_function" finished-at="2017-07-26T19:41:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestB_test_the_red_box_function -->
+        <test-method status="PASS" signature="TestC_test_matching_for_the_two_colour_boxes()[pri:0, instance:Tests.tatoc.basic.Test1@ff5b51f]" name="TestC_test_matching_for_the_two_colour_boxes" duration-ms="2918" started-at="2017-07-26T19:41:39Z" depends-on-methods="Tests.tatoc.basic.Test1.TestB_test_the_red_box_function" finished-at="2017-07-26T19:41:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestC_test_matching_for_the_two_colour_boxes -->
+        <test-method status="PASS" signature="TestD_test_the_wrong_drop_of_element()[pri:0, instance:Tests.tatoc.basic.Test1@ff5b51f]" name="TestD_test_the_wrong_drop_of_element" duration-ms="393" started-at="2017-07-26T19:41:42Z" depends-on-methods="Tests.tatoc.basic.Test1.TestC_test_matching_for_the_two_colour_boxes" finished-at="2017-07-26T19:41:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestD_test_the_wrong_drop_of_element -->
+        <test-method status="PASS" signature="TestE_check_the_drag_and_drop_function()[pri:0, instance:Tests.tatoc.basic.Test1@ff5b51f]" name="TestE_check_the_drag_and_drop_function" duration-ms="337" started-at="2017-07-26T19:41:43Z" depends-on-methods="Tests.tatoc.basic.Test1.TestD_test_the_wrong_drop_of_element" finished-at="2017-07-26T19:41:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestE_check_the_drag_and_drop_function -->
+        <test-method status="PASS" signature="Closer()[pri:0, instance:Tests.tatoc.basic.Test1@ff5b51f]" name="Closer" is-config="true" duration-ms="106" started-at="2017-07-26T19:41:43Z" finished-at="2017-07-26T19:41:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Closer -->
+      </class> <!-- Tests.tatoc.basic.Test1 -->
+    </test> <!-- first -->
+  </suite> <!-- Suite1 -->
 </testng-results>

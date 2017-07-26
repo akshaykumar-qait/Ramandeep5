@@ -14,10 +14,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
 
 import utility.Datadecider;
 import utility.InitWebdriver;
@@ -28,7 +28,7 @@ import utility.WebElementUse;
 public class Test1 {
 
 	WebDriver driver;
-	
+
 	WebElementUse useElements;
 	Wait_for_element waitElements;
 	Datadecider data;
@@ -37,7 +37,6 @@ public class Test1 {
 	@BeforeTest
 	public void Initializer() throws IOException {
 
-	
 		driver = new InitWebdriver().Browserdecider();
 		useElements = new WebElementUse();
 		waitElements = new Wait_for_element();
@@ -157,22 +156,21 @@ public class Test1 {
 
 	}
 
-	@Test//(dependsOnMethods = "TestE_check_the_drag_and_drop_function")
+	@Test // (dependsOnMethods = "TestE_check_the_drag_and_drop_function")
 	public void TestF_test_the_form_filling() throws IOException, InterruptedException {
-		
+
 		useElements.webElement_open_url(driver, url + data.readit("windows_url", "urls"));
 
-		 waitElements.waits_by_linktext(driver, "Launch Popup Window");
-		 useElements.webElement_click_by_linkname(driver, "Launch Popup Window");
-		
-		
+		waitElements.waits_by_linktext(driver, "Launch Popup Window");
+		useElements.webElement_click_by_linkname(driver, "Launch Popup Window");
+
 		ArrayList<String> tabs2 = new ArrayList<String>(driver.getWindowHandles());
-	//	driver.switchTo().window(driver.getWindowHandle());
+		// driver.switchTo().window(driver.getWindowHandle());
 
 		driver.switchTo().window(tabs2.get(tabs2.size() - 1));
 
 		System.out.println(tabs2.get(1));
-		System.out.println("switched"+driver.getWindowHandles());
+		System.out.println("switched" + driver.getWindowHandles());
 
 		waitElements.waits_by_id(driver, "name");
 		useElements.webElement_fill_by_id(driver, "name", "nishant");
@@ -181,8 +179,6 @@ public class Test1 {
 
 		System.out.println("submitted");
 
-	
-		
 		driver.switchTo().window(tabs2.get(0));
 		System.out.println("final");
 		waitElements.waits_by_linktext(driver, "Proceed");
@@ -217,7 +213,7 @@ public class Test1 {
 
 	}
 
-	@AfterTest
+	@AfterClass
 	public void Closer() throws IOException {
 
 		driver.close();

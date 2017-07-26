@@ -28,7 +28,6 @@ public class Test2 {
 	@BeforeTest
 	public void Initializer() throws IOException {
 
-
 		driver = new InitWebdriver().Browserdecider();
 		useElements = new WebElementUse();
 		waitElements = new Wait_for_element();
@@ -72,7 +71,7 @@ public class Test2 {
 		useElements.webElement_fill_by_id(driver, "name", record2[1]);
 		useElements.webElement_fill_by_id(driver, "passkey", record2[2]);
 
-		//Thread.sleep(3000);
+		// Thread.sleep(3000);
 		useElements.webElement_click_by_id(driver, "submit");
 		// waitElements.waits_by_linktext(driver, "Proceed");
 		assertThat(driver.getCurrentUrl()).isEqualTo(url + data.readit("vedio_player", "urls"));
@@ -100,11 +99,9 @@ public class Test2 {
 
 		useElements.webElement_click_by_linkname(driver, "Download File");
 
-	Thread.sleep(4000);
+		Thread.sleep(4000);
 
-		
-		
-    	File f = new File("resource/downloads/file_handle_test.dat");
+		File f = new File("resource/downloads/file_handle_test.dat");
 
 		BufferedReader b = new BufferedReader(new FileReader(f));
 
@@ -117,13 +114,12 @@ public class Test2 {
 
 		}
 		f.delete();
-	
 
 		String session[] = arrsplit.split(":");
 
 		System.out.println(session[session.length - 1].trim());
 
-	useElements.webElement_fill_by_id(driver, "signature", session[session.length - 1].trim());
+		useElements.webElement_fill_by_id(driver, "signature", session[session.length - 1].trim());
 
 		useElements.webElement_click_by_css(driver, ".submit");
 		assertThat(driver.getCurrentUrl()).isEqualTo(data.readit("totac_complete", "urls"));
