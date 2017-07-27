@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite1]">
-  <test name="first(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="Tests.tatoc.basic.Test1">
+      <class name="Tests.tatoc.advanced.Test2">
         <methods>
-          <include name="TestC_test_matching_for_the_two_colour_boxes"/>
           <include name="Initializer"/>
-          <include name="TestE_check_the_drag_and_drop_function"/>
-          <include name="TestD_test_the_wrong_drop_of_element"/>
-          <include name="Closer"/>
-          <include name="TestA_test_the_green_box_function"/>
-          <include name="TestB_test_the_red_box_function"/>
+          <include name="TestA_check_after_vedio_playback"/>
+          <include name="TestA_check_the_database"/>
+          <include name="TestA_check_file_handle"/>
+          <include name="TestA_on_hover_menu"/>
         </methods>
-      </class> <!-- Tests.tatoc.basic.Test1 -->
+      </class> <!-- Tests.tatoc.advanced.Test2 -->
     </classes>
-  </test> <!-- first(failed) -->
-</suite> <!-- Failed suite [Suite1] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
