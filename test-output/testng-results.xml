@@ -1,40 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="4" passed="3">
+<testng-results skipped="3" failed="1" ignored="0" total="4" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="16257" started-at="2017-07-27T06:21:46Z" finished-at="2017-07-27T06:22:02Z">
+  <suite name="Default suite" duration-ms="9584" started-at="2017-07-27T11:59:01Z" finished-at="2017-07-27T11:59:11Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="16257" started-at="2017-07-27T06:21:46Z" finished-at="2017-07-27T06:22:02Z">
+    <test name="Default test" duration-ms="9584" started-at="2017-07-27T11:59:01Z" finished-at="2017-07-27T11:59:11Z">
       <class name="Tests.tatoc.advanced.Test2">
-        <test-method status="PASS" signature="Initializer()[pri:0, instance:Tests.tatoc.advanced.Test2@3c0ecd4b]" name="Initializer" is-config="true" duration-ms="4455" started-at="2017-07-27T11:51:46Z" finished-at="2017-07-27T11:51:50Z">
+        <test-method status="PASS" signature="Initializer()[pri:0, instance:Tests.tatoc.advanced.Test2@31ef45e3]" name="Initializer" is-config="true" duration-ms="1055" started-at="2017-07-27T17:29:01Z" finished-at="2017-07-27T17:29:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Initializer -->
-        <test-method status="PASS" signature="TestA_on_hover_menu()[pri:0, instance:Tests.tatoc.advanced.Test2@3c0ecd4b]" name="TestA_on_hover_menu" duration-ms="569" started-at="2017-07-27T11:51:50Z" finished-at="2017-07-27T11:51:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestA_on_hover_menu -->
-        <test-method status="PASS" signature="TestA_check_the_database()[pri:0, instance:Tests.tatoc.advanced.Test2@3c0ecd4b]" name="TestA_check_the_database" duration-ms="1610" started-at="2017-07-27T11:51:51Z" depends-on-methods="Tests.tatoc.advanced.Test2.TestA_on_hover_menu" finished-at="2017-07-27T11:51:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestA_check_the_database -->
-        <test-method status="PASS" signature="TestA_check_after_vedio_playback()[pri:0, instance:Tests.tatoc.advanced.Test2@3c0ecd4b]" name="TestA_check_after_vedio_playback" duration-ms="368" started-at="2017-07-27T11:51:52Z" depends-on-methods="Tests.tatoc.advanced.Test2.TestA_check_the_database" finished-at="2017-07-27T11:51:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestA_check_after_vedio_playback -->
-        <test-method status="FAIL" signature="TestA_check_file_handle()[pri:0, instance:Tests.tatoc.advanced.Test2@3c0ecd4b]" name="TestA_check_file_handle" duration-ms="9232" started-at="2017-07-27T11:51:53Z" depends-on-methods="Tests.tatoc.advanced.Test2.TestA_check_after_vedio_playback" finished-at="2017-07-27T11:52:02Z">
-          <exception class="java.io.FileNotFoundException">
+        <test-method status="FAIL" signature="TestA_on_hover_menu()[pri:0, instance:Tests.tatoc.advanced.Test2@31ef45e3]" name="TestA_on_hover_menu" duration-ms="8500" started-at="2017-07-27T17:29:02Z" finished-at="2017-07-27T17:29:11Z">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[resource/downloads/file_handle_test.dat (No such file or directory)]]>
+              <![CDATA[chrome not reachable
+  (Session info: chrome=59.0.3071.104)
+  (Driver info: chromedriver=2.30.477691 (6ee44a7247c639c0703f291d320bdf05c1531b57),platform=Linux 4.4.0-83-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'asda1712po02529', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-83-generic', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477691 (6ee44a7247c639c0703f291d320bdf05c1531b57), userDataDir=/tmp/.org.chromium.Chromium.R6hu6M}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.104, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 8427567a2a4a7f9a0d0d2386b513f9a6
+*** Element info: {Using=xpath, value=//span[@class='menuitem'][text()='Go Next']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.io.FileNotFoundException: resource/downloads/file_handle_test.dat (No such file or directory)
-	at java.io.FileInputStream.open0(Native Method)
-	at java.io.FileInputStream.open(FileInputStream.java:195)
-	at java.io.FileInputStream.<init>(FileInputStream.java:138)
-	at java.io.FileReader.<init>(FileReader.java:72)
-	at Tests.tatoc.advanced.Test2.TestA_check_file_handle(Test2.java:111)
+              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=59.0.3071.104)
+  (Driver info: chromedriver=2.30.477691 (6ee44a7247c639c0703f291d320bdf05c1531b57),platform=Linux 4.4.0-83-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'asda1712po02529', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-83-generic', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477691 (6ee44a7247c639c0703f291d320bdf05c1531b57), userDataDir=/tmp/.org.chromium.Chromium.R6hu6M}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.104, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 8427567a2a4a7f9a0d0d2386b513f9a6
+*** Element info: {Using=xpath, value=//span[@class='menuitem'][text()='Go Next']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:437)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:513)
+	at org.openqa.selenium.By$ByXPath.findElements(By.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:398)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at utility.Wait_for_element.waits_by(Wait_for_element.java:17)
+	at Tests.tatoc.advanced.Test2.TestA_on_hover_menu(Test2.java:52)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -62,7 +81,100 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.io.FileNotFoundException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestA_on_hover_menu -->
+        <test-method status="SKIP" signature="TestA_check_the_database()[pri:0, instance:Tests.tatoc.advanced.Test2@31ef45e3]" name="TestA_check_the_database" duration-ms="0" started-at="2017-07-27T17:29:11Z" depends-on-methods="Tests.tatoc.advanced.Test2.TestA_on_hover_menu" finished-at="2017-07-27T17:29:11Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Test2.TestA_check_the_database()[pri:0, instance:Tests.tatoc.advanced.Test2@31ef45e3] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Test2.TestA_check_the_database()[pri:0, instance:Tests.tatoc.advanced.Test2@31ef45e3] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1084)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestA_check_the_database -->
+        <test-method status="SKIP" signature="TestA_check_after_vedio_playback()[pri:0, instance:Tests.tatoc.advanced.Test2@31ef45e3]" name="TestA_check_after_vedio_playback" duration-ms="0" started-at="2017-07-27T17:29:11Z" depends-on-methods="Tests.tatoc.advanced.Test2.TestA_check_the_database" finished-at="2017-07-27T17:29:11Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Test2.TestA_check_after_vedio_playback()[pri:0, instance:Tests.tatoc.advanced.Test2@31ef45e3] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Test2.TestA_check_after_vedio_playback()[pri:0, instance:Tests.tatoc.advanced.Test2@31ef45e3] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1084)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestA_check_after_vedio_playback -->
+        <test-method status="SKIP" signature="TestA_check_file_handle()[pri:0, instance:Tests.tatoc.advanced.Test2@31ef45e3]" name="TestA_check_file_handle" duration-ms="0" started-at="2017-07-27T17:29:11Z" depends-on-methods="Tests.tatoc.advanced.Test2.TestA_check_after_vedio_playback" finished-at="2017-07-27T17:29:11Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Test2.TestA_check_file_handle()[pri:0, instance:Tests.tatoc.advanced.Test2@31ef45e3] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Test2.TestA_check_file_handle()[pri:0, instance:Tests.tatoc.advanced.Test2@31ef45e3] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1084)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestA_check_file_handle -->

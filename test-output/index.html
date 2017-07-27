@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,  3 skipped,  </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,34 +102,34 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Tests.tatoc.advanced.Test2" hash-for-method="TestA_check_file_handle">TestA_check_file_handle</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Tests.tatoc.advanced.Test2" hash-for-method="TestA_on_hover_menu">TestA_on_hover_menu</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods skipped suite-Default_suite"> (hide)</a> <!-- hide-methods skipped suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods skipped suite-Default_suite"> (show)</a> <!-- show-methods skipped suite-Default_suite -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content skipped suite-Default_suite">
                       <span>
-                        <img width="3%" src="passed.png"/>
+                        <img width="3%" src="skipped.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Tests.tatoc.advanced.Test2" hash-for-method="TestA_check_after_vedio_playback">TestA_check_after_vedio_playback</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Tests.tatoc.advanced.Test2" hash-for-method="TestA_check_the_database">TestA_check_the_database</a> <!-- method navigator-link -->
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Tests.tatoc.advanced.Test2" hash-for-method="TestA_check_file_handle">TestA_check_file_handle</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Tests.tatoc.advanced.Test2" hash-for-method="TestA_on_hover_menu">TestA_on_hover_menu</a> <!-- method navigator-link -->
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Tests.tatoc.advanced.Test2" hash-for-method="TestA_check_the_database">TestA_check_the_database</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                    </div> <!-- method-list-content skipped suite-Default_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -149,15 +149,37 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="TestA_check_file_handle">
-                  </a> <!-- TestA_check_file_handle -->
-                  <span class="method-name">TestA_check_file_handle</span>
-                  <div class="stack-trace">java.io.FileNotFoundException: resource/downloads/file_handle_test.dat (No such file or directory)
-	at java.io.FileInputStream.open0(Native Method)
-	at java.io.FileInputStream.open(FileInputStream.java:195)
-	at java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:138)
-	at java.io.FileReader.&lt;init&gt;(FileReader.java:72)
-	at Tests.tatoc.advanced.Test2.TestA_check_file_handle(Test2.java:111)
+                  <a name="TestA_on_hover_menu">
+                  </a> <!-- TestA_on_hover_menu -->
+                  <span class="method-name">TestA_on_hover_menu</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=59.0.3071.104)
+  (Driver info: chromedriver=2.30.477691 (6ee44a7247c639c0703f291d320bdf05c1531b57),platform=Linux 4.4.0-83-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5 milliseconds
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;asda1712po02529&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.4.0-83-generic&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477691 (6ee44a7247c639c0703f291d320bdf05c1531b57), userDataDir=/tmp/.org.chromium.Chromium.R6hu6M}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.104, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 8427567a2a4a7f9a0d0d2386b513f9a6
+*** Element info: {Using=xpath, value=//span[@class=&apos;menuitem&apos;][text()=&apos;Go Next&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:437)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:513)
+	at org.openqa.selenium.By$ByXPath.findElements(By.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:398)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at utility.Wait_for_element.waits_by(Wait_for_element.java:17)
+	at Tests.tatoc.advanced.Test2.TestA_on_hover_menu(Test2.java:52)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -189,9 +211,9 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Default_suite-class-failed -->
-          <div class="suite-Default_suite-class-passed">
+          <div class="suite-Default_suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="skipped.png"/>
               <span class="class-name">Tests.tatoc.advanced.Test2</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -200,6 +222,55 @@
                   <a name="TestA_check_after_vedio_playback">
                   </a> <!-- TestA_check_after_vedio_playback -->
                   <span class="method-name">TestA_check_after_vedio_playback</span>
+                  <div class="stack-trace">java.lang.Throwable: Method Test2.TestA_check_after_vedio_playback()[pri:0, instance:Tests.tatoc.advanced.Test2@31ef45e3] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1084)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestA_check_file_handle">
+                  </a> <!-- TestA_check_file_handle -->
+                  <span class="method-name">TestA_check_file_handle</span>
+                  <div class="stack-trace">java.lang.Throwable: Method Test2.TestA_check_file_handle()[pri:0, instance:Tests.tatoc.advanced.Test2@31ef45e3] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1084)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -207,21 +278,35 @@
                   <a name="TestA_check_the_database">
                   </a> <!-- TestA_check_the_database -->
                   <span class="method-name">TestA_check_the_database</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TestA_on_hover_menu">
-                  </a> <!-- TestA_on_hover_menu -->
-                  <span class="method-name">TestA_on_hover_menu</span>
+                  <div class="stack-trace">java.lang.Throwable: Method Test2.TestA_check_the_database()[pri:0, instance:Tests.tatoc.advanced.Test2@31ef45e3] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1084)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
+          </div> <!-- suite-Default_suite-class-skipped -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/tmp/testng-eclipse-760818295/testng-customsuite.xml</span>
+            <span class="header-content">/tmp/testng-eclipse-1188464341/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -272,26 +357,26 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'TestA_check_file_handle')
+data.setCell(0, 1, 'TestA_on_hover_menu')
 data.setCell(0, 2, 'Tests.tatoc.advanced.Test2')
-data.setCell(0, 3, 9232);
+data.setCell(0, 3, 8500);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'TestA_check_the_database')
+data.setCell(1, 1, 'TestA_check_file_handle')
 data.setCell(1, 2, 'Tests.tatoc.advanced.Test2')
-data.setCell(1, 3, 1610);
+data.setCell(1, 3, 0);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'TestA_on_hover_menu')
+data.setCell(2, 1, 'TestA_check_after_vedio_playback')
 data.setCell(2, 2, 'Tests.tatoc.advanced.Test2')
-data.setCell(2, 3, 569);
+data.setCell(2, 3, 0);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'TestA_check_after_vedio_playback')
+data.setCell(3, 1, 'TestA_check_the_database')
 data.setCell(3, 2, 'Tests.tatoc.advanced.Test2')
-data.setCell(3, 3, 368);
+data.setCell(3, 3, 0);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 11 seconds</span>
+              <span class="suite-total-time">Total running time: 8 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -323,22 +408,10 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">TestA_on_hover_menu</span>
-                <span class="method-start">4466 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">TestA_check_the_database</span>
-                <span class="method-start">5039 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">TestA_check_after_vedio_playback</span>
-                <span class="method-start">6650 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">TestA_check_file_handle</span>
-                <span class="method-start">7020 ms</span>
+                <span class="method-name">TestA_on_hover_menu</span>
+                <span class="method-start">1065 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

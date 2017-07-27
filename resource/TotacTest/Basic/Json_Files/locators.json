@@ -1,13 +1,13 @@
 {
 	"locators": [
 		{
-			"greenbox_css": ".greenbox",
-			"redbox_css": ".redbox",
-			"repaint_xpath": "/html/body/center/a[1]",
-			"box1_name": "Box 1",
-			"proceed_xpath": "/html/body/center/a[2]",
-			"box2_name": "Box 2",
-			"eachbox_xpath":"/html/body/div/div[2]/table/tbody/tr[row]/td[col]/div"
+			"greenbox_css": ".greenbox_css",
+			"redbox_css": ".redbox_css",
+			"repaint_xpath": "/html/body/center/a[1]_xpath",
+			"box1_name": "Box 1_name",
+			"proceed_xpath": "/html/body/center/a[2]_xpath",
+			"box2_name": "Box 2_name",
+			"eachbox_xpath":"/html/body/div/div[2]/table/tbody/tr[row]/td[col]/div_xpath"
 			
 			
 		}

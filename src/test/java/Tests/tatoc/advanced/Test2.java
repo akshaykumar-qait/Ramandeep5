@@ -7,7 +7,6 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -45,13 +44,13 @@ public class Test2 {
 		useElements.webElement_open_url(driver, url + data.readit("hover_menu", "urls"));
 		
 		
-		waitElements.waits_by_css(driver, ".menutop.m2");
+		waitElements.waits_by(driver, ".menutop.m2_css");
 		
 	    
-		useElements.webElement_hover_move_by_css(driver, ".menutop.m2");
+		useElements.webElement_hover_move(driver, ".menutop.m2_css");
 	
-		waitElements.waits_by_xpath(driver, "//span[@class='menuitem'][text()='Go Next']");
-		useElements.webElement_click_by_xpath(driver, "//span[@class='menuitem'][text()='Go Next']");
+		waitElements.waits_by(driver, "//span[@class='menuitem'][text()='Go Next']_xpath");
+		useElements.webElement_click(driver, "//span[@class='menuitem'][text()='Go Next']_xpath");
 
 	}
 
@@ -59,7 +58,7 @@ public class Test2 {
 	public void TestA_check_the_database() throws IOException, InterruptedException {
 
 		useElements.webElement_open_url(driver, url + data.readit("query_gate", "urls"));
-		String datais = useElements.getText_by_id(driver, "symboldisplay");
+		String datais = useElements.getText(driver, "symboldisplay_id");
 		datais = "'" + datais + "'";
 
 		System.out.println(datais);
@@ -72,11 +71,11 @@ public class Test2 {
 		record2 = obj_sql.getResult("id", record[0], "credentials", 3).split(",");
 		System.out.println(record2[1] + "  " + record2[2]);
 
-		useElements.webElement_fill_by_id(driver, "name", record2[1]);
-		useElements.webElement_fill_by_id(driver, "passkey", record2[2]);
+		useElements.webElement_fill(driver, "name_id", record2[1]);
+		useElements.webElement_fill(driver, "passkey_id", record2[2]);
 
 		// Thread.sleep(3000);
-		useElements.webElement_click_by_id(driver, "submit");
+		useElements.webElement_click(driver, "submit_id");
 		// waitElements.waits_by_linktext(driver, "Proceed");
 		assertThat(driver.getCurrentUrl()).isEqualTo(url + data.readit("vedio_player", "urls"));
 
@@ -85,15 +84,15 @@ public class Test2 {
 	@Test(dependsOnMethods = "TestA_check_the_database")
 	public void TestA_check_after_vedio_playback() throws Exception {
 
-		useElements.webElement_open_url(driver, url + data.readit("after_vedio", "locators"));
+		useElements.webElement_open_url(driver, url + data.readit("after_vedio", "urls"));
 		APIuse api = new APIuse();
-		String session[] = useElements.getText_by_id(driver, "session_id").split(":");
+		String session[] = useElements.getText(driver, "session_id_id").split(":");
 		String token = api.gettoken(session[1].trim());
 		// System.out.println(token);
 
 		api.register(session[1].trim(), token);
-		useElements.webElement_click_by_linkname(driver, "Proceed");
-		waitElements.waits_by_linktext(driver, "Download File");
+		useElements.webElement_click(driver, "Proceed_linktext");
+		waitElements.waits_by(driver, "Download File_linktext");
 		assertThat(driver.getCurrentUrl()).isEqualTo(url + data.readit("file_handle", "urls"));
 
 	}
@@ -101,7 +100,7 @@ public class Test2 {
 	@Test(dependsOnMethods = "TestA_check_after_vedio_playback")
 	public void TestA_check_file_handle() throws Exception {
 
-		useElements.webElement_click_by_linkname(driver, "Download File");
+		useElements.webElement_click(driver, "Download File_linktext");
 
 		Thread.sleep(4000);
 		//waitElements.wait(4000);
@@ -124,9 +123,9 @@ public class Test2 {
 
 		System.out.println(session[session.length - 1].trim());
 
-		useElements.webElement_fill_by_id(driver, "signature", session[session.length - 1].trim());
+		useElements.webElement_fill(driver, "signature_id", session[session.length - 1].trim());
 
-		useElements.webElement_click_by_css(driver, ".submit");
+		useElements.webElement_click(driver, ".submit_css");
 		assertThat(driver.getCurrentUrl()).isEqualTo(data.readit("totac_complete", "urls"));
 
 	}

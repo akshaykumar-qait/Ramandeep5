@@ -1,11 +1,15 @@
 package Readers;
 
 import java.io.FileReader;
+import java.util.ArrayList;
 
 import org.apache.bcel.generic.NEW;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
+
+
+import utility.PathSetter;
 
 public class JsonReader {
 
@@ -17,7 +21,7 @@ public class JsonReader {
 
 		try {
 
-//			System.err.println("type is" + type);
+			// System.err.println("type is" + type);
 
 			OptionReader readopt = new OptionReader();
 			if (type.equals("ids")) {
@@ -30,18 +34,15 @@ public class JsonReader {
 			} else if (type.equals("urls")) {
 				resFile = readopt.optionFileReader("currentpath") + "Json_Files/urls.json";
 			} else {
-				resFile = readopt.optionFileReader("currentpath") + "Json_Files/" +type+".json";
+				resFile = readopt.optionFileReader("currentpath") + "Json_Files/" + type + ".json";
 
 			}
 
 			mainJsonObj = (JSONObject) parser.parse(new FileReader(resFile));
 
-			//System.err.println(mainJsonObj);
-
 			JSONArray locator = (JSONArray) mainJsonObj.get(type.toLowerCase());
 			JSONObject locators = (JSONObject) locator.get(0);
-
-			return locators.get(key).toString();
+				return locators.get(key).toString();
 
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -49,5 +50,6 @@ public class JsonReader {
 		}
 
 	}
+	
 
 }

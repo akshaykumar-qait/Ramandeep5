@@ -10,7 +10,8 @@
 			"generate_token":"rest/service/token/",
 			"register_service":"rest/service/register/",
 			"file_handle":"file/handle",
-			"totac_complete":"http://10.0.1.86/tatoc/end"
+			"totac_complete":"http://10.0.1.86/tatoc/end",
+			"after_vedio":"rest#"
 			
 		}
 	]
